@@ -1,0 +1,27 @@
+<h1>Hello {{title}} !!!</h1>
+
+<!-- <p>姓名： {{ person.name }}</p>
+<p>年龄： {{ person.age }}</p>
+<p>性别： {{ person.sex }}</p> -->
+
+<hr>
+
+
+<input type="button" value="测试点击事件" (click)="onSubmit()">
+
+<form >
+    <p>
+        <label>姓名：</label>
+        <!-- fixme ng-model 有问题：没有绑定上数据 -->
+        <input type="text" name="name" role="姓名" [(ngModel)]="name">
+    </p>
+    <p>
+        <label>年龄：</label>
+        <input type="text" name="age" role="年龄" [(ngModel)]="age">
+    </p>
+    <p>
+        <label>性别：</label>
+        <input type="text" name="sex" role="性别" [(ngModel)]="sex">
+    </p>
+
+</form>
