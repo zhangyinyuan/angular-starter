@@ -1,0 +1,16 @@
+<h1>我是Header</h1>
+
+
+
+<ul>
+    <li *ngFor="let item of array; let i=index">{{i+1}} -- {{item}}</li>
+</ul>
+
+<img src="assets/1.jpg" style="width:200px; height: 200px;" />
+
+<br>
+
+<!-- src加[]表示是一个动态的属性。 绑定的属性值是baiduImgUrl -->
+<img [src]="baiduImgUrl" style="width:200px; height: 200px;" />
+
+<hr>

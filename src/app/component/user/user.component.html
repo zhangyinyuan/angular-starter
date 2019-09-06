@@ -13,15 +13,15 @@
     <p>
         <label>姓名：</label>
         <!-- fixme ng-model 有问题：没有绑定上数据 -->
-        <input type="text" name="name" role="姓名" [(ngModel)]="name">
+        <input type="text" name="name" role="姓名" [(ngModel)]="person.name">
     </p>
     <p>
         <label>年龄：</label>
-        <input type="text" name="age" role="年龄" [(ngModel)]="age">
+        <input type="text" name="age" role="年龄" [(ngModel)]="person.age">
     </p>
     <p>
         <label>性别：</label>
-        <input type="text" name="sex" role="性别" [(ngModel)]="sex">
+        <input type="text" name="sex" role="性别" [(ngModel)]="person.sex">
     </p>
 
 </form>

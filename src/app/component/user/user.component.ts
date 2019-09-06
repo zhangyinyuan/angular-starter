@@ -12,18 +12,19 @@ export class UserComponent implements OnInit {
   name: string;
 
   constructor() {
-    console.info("constructor run");
+    console.info('constructor run');
   }
 
   ngOnInit() {
-    console.info("ngOnInit run");
-    // 对象实现数据绑定仍然存在问题
-    // this.person.name = "春秋五霸";
-    // this.person.age = 20;
-    // this.person.sex = '保密';
+    console.info('ngOnInit run');
+    this.person = {
+      name: '春秋五霸',
+      age: 1,
+      sex: '未知'
+    };
   }
 
-  onSubmit(){
+  onSubmit() {
     alert('你好，点击事件');
   }
 }
